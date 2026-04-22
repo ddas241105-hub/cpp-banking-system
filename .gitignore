@@ -1,0 +1,4 @@
+*.exe
+*.out
+data/accounts.dat
+data/transactions.txt
