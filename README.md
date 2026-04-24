@@ -28,3 +28,4 @@ g++ src/*.cpp -o bank
 - GUI interface
 - Database integration
 - Password encryption
+- Admin panel with account monitoring and analytics
