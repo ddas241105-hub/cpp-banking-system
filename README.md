@@ -29,3 +29,6 @@ g++ src/*.cpp -o bank
 - Database integration
 - Password encryption
 - Admin panel with account monitoring and analytics
+- Secure PIN input using masked characters
+- Robust input validation to prevent invalid transactions
+- Account lock system after multiple failed login attempts
