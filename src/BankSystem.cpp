@@ -42,6 +42,13 @@ void BankSystem::createAccount() {
     cout << "Enter Account No: ";
     cin >> accNo;
 
+    for (auto &acc : accounts) {
+        if (acc.getAccNo() == accNo) {
+            cout << "Account number already exists!\n";
+            return;
+        }
+    }
+
     cout << "Enter Name: ";
     cin >> name;
 
@@ -95,4 +102,38 @@ void BankSystem::withdraw(Account* acc) {
 
 void BankSystem::showBalance(Account* acc) {
     cout << "Balance: " << acc->getBalance() << endl;
+}
+
+void viewTransactions(int accNo) {
+    ifstream file("../data/transactions.txt");
+    string line;
+    bool found = false;
+
+    while (getline(file, line)) {
+        if (line.find(to_string(accNo)) != string::npos) {
+            cout << line << endl;
+            found = true;
+        }
+    }
+
+    if (!found) {
+        cout << "No transactions found.\n";
+    }
+}
+
+void BankSystem::searchAccount() {
+    int accNo;
+    cout << "Enter Account Number to search: ";
+    cin >> accNo;
+
+    for (auto &acc : accounts) {
+        if (acc.getAccNo() == accNo) {
+            cout << "Account Found:\n";
+            cout << "Name: " << acc.getName() << endl;
+            cout << "Balance: " << acc.getBalance() << endl;
+            return;
+        }
+    }
+
+    cout << "Account not found.\n";
 }

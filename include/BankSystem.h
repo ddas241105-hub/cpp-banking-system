@@ -18,6 +18,7 @@ public:
     void deposit(Account*);
     void withdraw(Account*);
     void showBalance(Account*);
+    void searchAccount();
 };
 
 #endif
