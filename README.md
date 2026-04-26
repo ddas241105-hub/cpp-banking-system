@@ -47,6 +47,11 @@ g++ src/*.cpp -o bank
 ### Transactions (with timestamps)
 ![Transactions](screenshots/transactions.png)
 
+## Demo Video
+
+Watch the working demo here:  
+https://drive.google.com/file/d/1O99_rDQM16g5ewu9Ui8-GpokbEdbc85p/view?usp=drive_link
+
 
 ## Author
 Debopriya Das
