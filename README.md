@@ -1,7 +1,7 @@
 # C++ Banking System
 
 ## Overview
-A command-line banking system built using C++ demonstrating object-oriented programming and file handling.
+A command-line banking system built in C++ that demonstrates object-oriented programming, file handling, and persistent data storage across sessions.
 
 ## Features
 - Account creation and login
@@ -9,6 +9,8 @@ A command-line banking system built using C++ demonstrating object-oriented prog
 - Balance checking
 - Transaction logging with timestamps
 - Persistent data storage using files
+- Account lock after multiple failed login attempts
+- Masked PIN input for secure authentication
 
 ## Tech Stack
 - C++
@@ -20,15 +22,20 @@ A command-line banking system built using C++ demonstrating object-oriented prog
 - include/ → header files
 - data/ → stored data files
 
+## Data Storage
+- Accounts stored in: data/accounts.txt
+- Transactions stored in: data/transactions.txt
+
 ## How to Run
+
+### Compile
 g++ src/*.cpp -o bank
-.\bank
+
+### Run
+./bank
 
 ## Future Improvements
 - GUI interface
 - Database integration
 - Password encryption
 - Admin panel with account monitoring and analytics
-- Secure PIN input using masked characters
-- Robust input validation to prevent invalid transactions
-- Account lock system after multiple failed login attempts
