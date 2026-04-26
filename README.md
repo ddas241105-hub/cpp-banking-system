@@ -49,7 +49,6 @@ g++ src/*.cpp -o bank
 
 ## Demo Video
 A quick walkthrough of the banking system:
-Watch the working demo here:  
 https://drive.google.com/file/d/1O99_rDQM16g5ewu9Ui8-GpokbEdbc85p/view?usp=drive_link
 
 
