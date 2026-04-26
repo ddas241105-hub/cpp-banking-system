@@ -34,8 +34,3 @@ g++ src/*.cpp -o bank
 ### Run
 ./bank
 
-## Future Improvements
-- GUI interface
-- Database integration
-- Password encryption
-- Admin panel with account monitoring and analytics
