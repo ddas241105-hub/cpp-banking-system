@@ -5,17 +5,19 @@ A command-line banking system built in C++ that demonstrates object-oriented pro
 
 ## Features
 - Account creation and login
-- Deposit and withdrawal
+- Secure authentication with masked PIN input
+- Deposit and withdrawal operations
+- Fund transfer between accounts
 - Balance checking
 - Transaction logging with timestamps
-- Persistent data storage using files
 - Account lock after multiple failed login attempts
-- Masked PIN input for secure authentication
+- Admin panel for account management and analytics
+- Persistent data storage using files 
 
 ## Tech Stack
 - C++
 - OOP (Classes, Encapsulation)
-- File Handling
+- File Handling (ifstream, ofstream)
 
 ## Project Structure
 - src/ → source files
@@ -34,3 +36,5 @@ g++ src/*.cpp -o bank
 ### Run
 ./bank
 
+## Author
+Debopriya Das
