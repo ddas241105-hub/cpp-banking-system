@@ -1,4 +1,4 @@
 *.exe
 *.out
-data/accounts.dat
+data/accounts.txt
 data/transactions.txt
