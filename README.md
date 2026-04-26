@@ -36,5 +36,17 @@ g++ src/*.cpp -o bank
 ### Run
 ./bank
 
+## Screenshots
+
+### Main Menu
+![Main Menu](screenshots/menu.png)
+
+### User Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Transactions (with timestamps)
+![Transactions](screenshots/transactions.png)
+
+
 ## Author
 Debopriya Das
