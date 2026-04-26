@@ -8,20 +8,30 @@ class Account {
 private:
     int accNo;
     string name;
-    int pin;
+    string pin;
     double balance;
+
+    
+    int failedAttempts;
+    bool isLocked;
 
 public:
     Account();
     Account(int, string, int);
+    Account(int, string, string, double);
 
     int getAccNo();
     string getName();
-    int getPin();
+    string getPin();
     double getBalance();
 
     void deposit(double);
     bool withdraw(double);
+
+    void incrementFailedAttempts();
+    void resetFailedAttempts();
+    bool getLockStatus();
+    void lockAccount();
 };
 
 #endif
