@@ -347,7 +347,8 @@ void BankSystem::unlockAccount() {
 
     for (auto &acc : accounts) {
         if (acc.getAccNo() == accNo) {
-            acc.resetFailedAttempts();
+            acc.unlockAccount();
+            saveData();  // persist change
             cout << "Account unlocked successfully\n";
             return;
         }

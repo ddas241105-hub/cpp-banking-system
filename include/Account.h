@@ -32,6 +32,7 @@ public:
     void resetFailedAttempts();
     bool getLockStatus();
     void lockAccount();
+    void unlockAccount();
 };
 
 #endif

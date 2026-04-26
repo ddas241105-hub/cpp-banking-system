@@ -64,3 +64,8 @@ bool Account::getLockStatus() {
 void Account::lockAccount() {
     isLocked = true;
 }
+
+void Account::unlockAccount() {
+    isLocked = false;
+    failedAttempts = 0;
+}
